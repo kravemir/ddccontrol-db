@@ -1,6 +1,8 @@
 <?xml version="1.0"?>
 <monitor name="Philips standard LCD" init="standard">
-	<controls>	
+	<controls>
+		<!-- TODO: refresh brightness if colorpreset is set to RGB -->
+		<!-- TODO: ignores caps specification, ie. PHL0908 (Philips 221B) doesn't have native option -->
 		<control id="colorpreset" address="0x14">
 			<value id="srgb"   value="0x1"/>
 			<value id="native" value="0x2"/>
