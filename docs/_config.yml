@@ -1,0 +1,6 @@
+title: DDC/CI control database
+
+theme: minima
+
+header_pages:
+    - 'monitors/index.md'

@@ -1,3 +1,5 @@
+# PHL08DC
+
 EDID readings:
 Plug and Play ID: PHL08DC [VESA standard monitor]
 Input type: Digital
