@@ -1,4 +1,8 @@
 title: DDC/CI control database
+author: ddccontrol developers
+description: >
+  DDC/CI control database is a database of monitor descriptors, which are used by ddccontrol and gddccontrol utilities to control monitor parameters, directly from computer, using DDC/CI protocol.
+github_username:  ddccontrol
 
 theme: minima
 
