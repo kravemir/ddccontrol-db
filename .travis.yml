@@ -24,4 +24,5 @@ script:
   - ./configure
   - make -j4
   - make check-db
+  - '[ "$(git status -s)" == "" ] && echo "GOOD: git files are unchanged after build"'
 
