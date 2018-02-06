@@ -49,7 +49,10 @@
 		<!-- TODO: 0xAC: Horizontal Frequency (RO) -->
 		<!-- TODO: 0xAE: Vertical Frequency (RO) -->
 		<!-- TODO: 0xB2: Flat Panel Sub-Pixel Layout (RO) -->
-		<!-- TODO: 0xB6: Display Technology Type (RO) -->
+		<control id="display-technology-type" address="0xB6">
+			<!-- TODO: not all MCCS 2.2 options present -->
+			<value id="lcd" value="0x03" />
+		</control>
 		<!-- TODO: 0xC0: Display Usage Time (RO) -->
 		<!-- TODO: 0xC6: Application Enable Key (RO) -->
 		<!-- TODO: 0xC8: Display Controller ID -->

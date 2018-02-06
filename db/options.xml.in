@@ -403,4 +403,12 @@
 			</control>
 		</subgroup>
 	</group>
+	<group name="Monitor information">
+		<!-- TODO: read-only -->
+		<subgroup name="Information">
+			<control id="display-technology-type" type="list" name="Display Technology Type" address="0xB6">
+				<value id="lcd" name="LCD" />
+			</control>
+        </subgroup>
+    </group>
 </options>
