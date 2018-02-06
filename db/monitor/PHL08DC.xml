@@ -8,20 +8,24 @@
 
 	<!-- specific controls, but they might(?) be shared with other Philips monitors -->
 	<controls>
-		<control id="inputsource" type="list" address="0x60">
-			<value id="vga"  value="0x01"/>
-			<value id="dvi"  value="0x03"/>
-			<value id="dp"   value="0x0f"/>
-		</control>
+		<!-- TODO: 0xEB -->
+		<!-- TODO: 0xF0 -->
+
 		<control id="powerled" address="0xf2">
 			<value id="off"   value="0x0"/>
-			<value id="1"     value="0x1"/>
-			<value id="2"     value="0x2"/>
-			<value id="3"     value="0x3"/>
-			<value id="4"     value="0x4"/>
+			<value id="1"	  value="0x1"/>
+			<value id="2"	  value="0x2"/>
+			<value id="3"	  value="0x3"/>
+			<value id="4"	  value="0x4"/>
 		</control>
+
+		<!-- TODO: 0xFA -->
+		<!-- TODO: 0xFB -->
+		<!-- TODO: 0xFC -->
+		<!-- TODO: 0xFD -->
+		<!-- TODO: 0xFE -->
 	</controls>
 
-	<!-- include shared config for Philips family -->
-	<include file="PHLlcd" />
+	<!-- include shared config for MCCS v2.2 standard -->
+	<include file="MCCS_v2.2" />
 </monitor>
