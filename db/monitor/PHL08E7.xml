@@ -15,7 +15,7 @@
 		</control>
 	</controls>
 
-	<!-- include shared config for Philips family -->
-	<include file="PHLlcd" />
+	<!-- include shared config for MCCS v2.2 standard -->
+	<include file="MCCS_v2.2" />
 </monitor>
 
