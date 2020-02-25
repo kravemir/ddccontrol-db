@@ -416,6 +416,7 @@
 				<value id="japanese"      name="日本語 (Japanese)"/>
 				<value id="polish"        name="Polski (Polish)"/>
 				<value id="czech"         name="Český (Czech)"/>
+				<value id="slovak"        name="Slovenský (Slovak)"/>
 				<value id="hungarian"     name="Magyar (Hungarian)"/>
 				<value id="romanian"      name="Română (Romanian)"/>
 				<value id="portuguese"    name="Português (Portuguese)"/>

@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<monitor name="VESA Monitor Control Command Set Standard v2.2" init="standard">
+	<controls>
+		<!-- TODO: is hard-coded delay neccessary, can't it be lower(dynamic)?? -->
+		<control id="defaults"     address="0x04" delay="2000"/>
+		<control id="defaultluma"  address="0x05" delay="2000"/>
+		<control id="defaultcolor" address="0x08" delay="2000"/>
+
+		<!-- TODO: 0x0B: User Color Temperature Increment -->
+		<!-- TODO: 0x0C: User Color Temperature -->
+
+		<control id="brightness" address="0x10"/>
+		<control id="contrast"   address="0x12"/>
+		<control id="colorpreset" address="0x14">
+			<!-- TODO: not all MCCS 2.2 options present -->
+			<value id="srgb"        value="0x1"/>
+			<value id="5000k"       value="0x4"/>
+			<value id="6500k"       value="0x5"/>
+			<value id="7500k"       value="0x6"/>
+			<value id="8200k"       value="0x7"/>
+			<value id="9300k"       value="0x8"/>
+			<value id="11500k"      value="0xA"/>
+			<value id="user1"       value="0xB"/>
+		</control>
+		<control id="red"   address="0x16"/>
+		<control id="green" address="0x18"/>
+		<control id="blue"  address="0x1A"/>
+
+		<!-- TODO: 0x52: Active Control FIFO (complex functionality, not control) -->
+		<!-- TODO: 0x54: Performance Preservation -->
+
+		<control id="inputsource" type="list" address="0x60">
+			<!-- TODO: not all MCCS 2.2 options present -->
+			<value id="vga"  value="0x01"/> <!-- MCCS: Analog video (R/G/B) 1 -->
+			<value id="dvi"  value="0x03"/> <!-- MCCS: Digital video (TMDS) 1 ... DVI 1 -->
+			<value id="dp"   value="0x0f"/> <!-- MCCS: DisplayPort 1 -->
+		</control>
+
+		<control id="audiospeakervolume" address="0x62"/>
+
+		<control id="redblack"   address="0x6C"/>
+		<control id="greenblack" address="0x6E"/>
+		<control id="blueblack"  address="0x70"/>
+
+		<!-- TODO: 0x72: Gamma -->
+		<!-- TODO: 0x86: Display Scaling -->
+		<!-- TODO: 0x8D: Audio Mute / Screen Blank -->
+		<!-- TODO: 0xAA: Screen Orientation (RO) -->
+		<!-- TODO: 0xAC: Horizontal Frequency (RO) -->
+		<!-- TODO: 0xAE: Vertical Frequency (RO) -->
+		<!-- TODO: 0xB2: Flat Panel Sub-Pixel Layout (RO) -->
+		<!-- TODO: 0xB6: Display Technology Type (RO) -->
+		<!-- TODO: 0xC0: Display Usage Time (RO) -->
+		<!-- TODO: 0xC6: Application Enable Key (RO) -->
+		<!-- TODO: 0xC8: Display Controller ID -->
+		<!-- TODO: 0xCA: OSD / Button Control -->
+
+		<control id="language" type="list" address="0xcc">
+			<!-- TODO: not all MCCS 2.2 languages present -->
+			<value id="chinese_tw"  value="0x01"/>
+			<value id="english"     value="0x02"/>
+			<value id="french"      value="0x03"/>
+			<value id="german"      value="0x04"/>
+			<value id="italian"     value="0x05"/>
+			<value id="spanish"     value="0x0a"/>
+			<value id="portuguese"  value="0x08"/>
+			<value id="russian"     value="0x09"/>
+			<value id="czech"       value="0x12"/>
+			<value id="slovak"      value="0x21"/>
+		</control>
+
+		<control id="dpms" address="0xD6"> <!-- MCCS: Power Mode -->
+			<!-- TODO: not all MCCS 2.2 options present -->
+			<value id="on"	    value="0x01"/>
+			<value id="standby" value="0x04"/>
+			<value id="off"	    value="0x05"/> <!-- MCCS: Power Off (not just off) -->
+		</control>
+
+		<!-- TODO: 0xDC: Display Application -->
+		<!-- TODO: 0xDF: VCP Version -->
+
+		<!-- Other 0xE0 - 0xFF: Manufacturer Specific -->
+	</controls>
+</monitor>
